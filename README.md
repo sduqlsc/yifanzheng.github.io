@@ -1,8 +1,8 @@
 ## Star's Tech Blog
 
-Hexo 框架驱动，Next 主题
+框架驱动：Hexo  
 
-Hexo 框架地址: https://theme-next.org/docs/getting-started/
+主题：NexT
 
 Next 主题 GitHub 地址: https://github.com/theme-next/hexo-theme-next
 
