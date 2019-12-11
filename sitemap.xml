@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yifanstar.top/2019/12/09/factory-pattern/</loc>
+    
+    <lastmod>2019-12-11T12:28:24.417Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yifanstar.top/about/index.html</loc>
     
     <lastmod>2019-12-09T15:18:20.998Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://yifanstar.top/2019/12/09/prototype-pattern/</loc>
     
     <lastmod>2019-12-09T14:56:50.166Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yifanstar.top/2019/12/09/factory-pattern/</loc>
-    
-    <lastmod>2019-12-09T13:31:11.158Z</lastmod>
     
   </url>
   
@@ -128,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
     
     <lastmod>2019-12-09T12:32:37.090Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
     
     <lastmod>2019-12-09T12:32:37.090Z</lastmod>
     
