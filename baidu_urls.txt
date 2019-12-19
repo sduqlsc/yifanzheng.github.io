@@ -1,3 +1,5 @@
+http://yifanstar.top/2019/12/19/spring-transaction/
+http://yifanstar.top/2019/12/19/bridge-pattern/
 http://yifanstar.top/2019/12/09/adapter-pattern/
 http://yifanstar.top/2019/12/09/builder-pattern/
 http://yifanstar.top/2019/12/09/prototype-pattern/

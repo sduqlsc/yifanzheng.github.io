@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yifanstar.top/2019/12/19/spring-transaction/</loc>
+    <lastmod>2019-12-19</lastmod>
+  </url>  <url>
+    <loc>http://yifanstar.top/2019/12/19/bridge-pattern/</loc>
+    <lastmod>2019-12-19</lastmod>
+  </url>  <url>
     <loc>http://yifanstar.top/2019/12/09/factory-pattern/</loc>
     <lastmod>2019-12-11</lastmod>
   </url>  <url>
@@ -52,10 +58,10 @@
     <loc>http://yifanstar.top/2019/12/09/springboot-properties/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
     <loc>http://yifanstar.top/2019/12/09/springboot-banner/</loc>
