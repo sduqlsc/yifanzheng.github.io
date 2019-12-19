@@ -50,6 +50,9 @@
 <p><a href="https://blog.csdn.net/rylan11/article/details/76609643" target="_blank" rel="noopener">https://blog.csdn.net/rylan11/article/details/76609643</a>  </p>
 <p><a href="https://blog.csdn.net/justloveyou_/article/details/73733278" target="_blank" rel="noopener">https://blog.csdn.net/justloveyou_/article/details/73733278</a></p>
 ]]></content>
+      <categories>
+        <category>Spring Boot 系列</category>
+      </categories>
   </entry>
   <entry>
     <title>桥接模式</title>
@@ -159,7 +162,7 @@
 <p>桥接模式要求正确识别出系统中两个独立变化的维度(抽象和实现)，因此其使用范围有一定的局限性，即需要有这样的应用场景。</p>
 ]]></content>
       <categories>
-        <category>Spring Boot 系列</category>
+        <category>Java 设计模式</category>
       </categories>
   </entry>
   <entry>
