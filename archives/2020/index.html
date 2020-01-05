@@ -50,17 +50,14 @@
   };
 </script>
 
-  <meta name="description" content="Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot 定制 Banner">
-<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2019&#x2F;12&#x2F;09&#x2F;springboot-banner&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Star&#39;s Tech Blog">
+<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;archives&#x2F;2020&#x2F;index.html">
 <meta property="og:site_name" content="Star&#39;s Tech Blog">
-<meta property="og:description" content="Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-09T12:30:18.780Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yifanstar.top/2019/12/09/springboot-banner/">
+<link rel="canonical" href="http://yifanstar.top/archives/2020/">
 
 
 <script id="page-configurations">
@@ -68,13 +65,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true,
+    isPost: false,
     isPage: false,
-    isArchive: false
+    isArchive: true
   };
 </script>
 
-  <title>Spring Boot 定制 Banner | Star's Tech Blog</title>
+  <title>归档 | Star's Tech Blog</title>
   
 
 
@@ -212,157 +209,53 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yifanstar.top/2019/12/09/springboot-banner/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="yifanzheng">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Star's Tech Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Spring Boot 定制 Banner
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-09 20:11:55 / 修改时间：20:30:18" itemprop="dateCreated datePublished" datetime="2019-12-09T20:11:55+08:00">2019-12-09</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Spring-Boot-%E7%B3%BB%E5%88%97/" itemprop="url" rel="index">
-                    <span itemprop="name">Spring Boot 系列</span>
-                  </a>
-                </span>
-            </span>
-
-          
-            <span id="/2019/12/09/springboot-banner/" class="post-meta-item leancloud_visitors" data-flag-title="Spring Boot 定制 Banner" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
   
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/12/09/springboot-banner/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/09/springboot-banner/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>383</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 25 篇日志。 继续努力。</span>
+      </div>
 
       
-        <p>Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。</p>
-<a id="more"></a>
-
-<h3 id="自定义-Banner"><a href="#自定义-Banner" class="headerlink" title="自定义 Banner"></a>自定义 Banner</h3><p>只需在 resources 目录下放置名为 banner.txt、banner.gif 、banner.jpg 或 banner.png 的文件，Spring Boot 在启动时会自动加载文件中的内容作为 Banner。</p>
-<p>如果是文本文件，Spring Boot 会将其直接输出。 </p>
-<p>如果是图像文件（ banner.gif 、banner.jpg 或 banner.png ），Spring Boot 会将图像转为 ASCII 字符，然后输出。</p>
-<h3 id="Banner-图形生成地址"><a href="#Banner-图形生成地址" class="headerlink" title="Banner 图形生成地址"></a>Banner 图形生成地址</h3><p><a href="https://devops.datenkollektiv.de/banner.txt/index.html" target="_blank" rel="noopener">https://devops.datenkollektiv.de/banner.txt/index.html</a></p>
-<p><a href="http://www.network-science.de/ascii/" target="_blank" rel="noopener">http://www.network-science.de/ascii/</a></p>
-<h3 id="源码地址"><a href="#源码地址" class="headerlink" title="源码地址"></a>源码地址</h3><p><a href="https://github.com/yifanzheng/springboot-action/tree/master/springboot-banner" target="_blank" rel="noopener">springboot-banner</a></p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
-        
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>Star.Y.Zheng
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="/http:/yifanstar.top/2019/12/09/springboot-banner/" title="Spring Boot 定制 Banner">http://yifanstar.top/2019/12/09/springboot-banner/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deep.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-01-05T14:16:20+08:00"
+              content="2020-01-05">
+          01-05
+        </time>
+      </div>
 
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/01/05/springboot-ehcache/" itemprop="url">
+            <span itemprop="name">Spring Boot 集成 Ehcache 实现缓存机制</span>
+          </a>
+      </h2>
 
-      <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/12/09/springboot-helloworld/" rel="prev" title="Spring Boot 快速上手">
-      <i class="fa fa-chevron-left"></i> Spring Boot 快速上手
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/09/springboot-devtools/" rel="next" title="Spring Boot 使用 devtools 实现热部署">
-      Spring Boot 使用 devtools 实现热部署 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
           
-    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -387,7 +280,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义-Banner"><span class="nav-number">1.</span> <span class="nav-text">自定义 Banner</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Banner-图形生成地址"><span class="nav-number">2.</span> <span class="nav-text">Banner 图形生成地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码地址"><span class="nav-number">3.</span> <span class="nav-text">源码地址</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

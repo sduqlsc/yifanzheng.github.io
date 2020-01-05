@@ -50,31 +50,28 @@
   };
 </script>
 
-  <meta name="description" content="Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot 定制 Banner">
-<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2019&#x2F;12&#x2F;09&#x2F;springboot-banner&#x2F;index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Star&#39;s Tech Blog">
+<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;page&#x2F;3&#x2F;index.html">
 <meta property="og:site_name" content="Star&#39;s Tech Blog">
-<meta property="og:description" content="Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-09T12:30:18.780Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yifanstar.top/2019/12/09/springboot-banner/">
+<link rel="canonical" href="http://yifanstar.top/page/3/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: false,
-    isPost: true,
+    isHome: true,
+    isPost: false,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>Spring Boot 定制 Banner | Star's Tech Blog</title>
+  <title>Star's Tech Blog</title>
   
 
 
@@ -213,11 +210,11 @@
             
 
   <div class="posts-expand">
-      
+        
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yifanstar.top/2019/12/09/springboot-banner/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yifanstar.top/2019/12/09/spring-security-jwt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -230,7 +227,8 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Spring Boot 定制 Banner
+          
+            <a href="/2019/12/09/spring-security-jwt/" class="post-title-link" itemprop="url">spring-security-jwt</a>
         </h1>
 
         <div class="post-meta">
@@ -241,7 +239,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-12-09 20:11:55 / 修改时间：20:30:18" itemprop="dateCreated datePublished" datetime="2019-12-09T20:11:55+08:00">2019-12-09</time>
+              <time title="创建时间：2019-12-09 18:18:22 / 修改时间：20:59:30" itemprop="dateCreated datePublished" datetime="2019-12-09T18:18:22+08:00">2019-12-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,7 +254,7 @@
             </span>
 
           
-            <span id="/2019/12/09/springboot-banner/" class="post-meta-item leancloud_visitors" data-flag-title="Spring Boot 定制 Banner" title="阅读次数">
+            <span id="/2019/12/09/spring-security-jwt/" class="post-meta-item leancloud_visitors" data-flag-title="spring-security-jwt" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -271,8 +269,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/12/09/springboot-banner/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/09/springboot-banner/" itemprop="commentCount"></span>
+    <a title="valine" href="/2019/12/09/spring-security-jwt/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/09/spring-security-jwt/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -282,7 +280,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>383</span>
+              <span>900</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -301,57 +299,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Spring Boot 启动时会有默认的 Banner 被加载，但 Spring Boot 也支持自定义 Banner 功能。</p>
-<a id="more"></a>
-
-<h3 id="自定义-Banner"><a href="#自定义-Banner" class="headerlink" title="自定义 Banner"></a>自定义 Banner</h3><p>只需在 resources 目录下放置名为 banner.txt、banner.gif 、banner.jpg 或 banner.png 的文件，Spring Boot 在启动时会自动加载文件中的内容作为 Banner。</p>
-<p>如果是文本文件，Spring Boot 会将其直接输出。 </p>
-<p>如果是图像文件（ banner.gif 、banner.jpg 或 banner.png ），Spring Boot 会将图像转为 ASCII 字符，然后输出。</p>
-<h3 id="Banner-图形生成地址"><a href="#Banner-图形生成地址" class="headerlink" title="Banner 图形生成地址"></a>Banner 图形生成地址</h3><p><a href="https://devops.datenkollektiv.de/banner.txt/index.html" target="_blank" rel="noopener">https://devops.datenkollektiv.de/banner.txt/index.html</a></p>
-<p><a href="http://www.network-science.de/ascii/" target="_blank" rel="noopener">http://www.network-science.de/ascii/</a></p>
-<h3 id="源码地址"><a href="#源码地址" class="headerlink" title="源码地址"></a>源码地址</h3><p><a href="https://github.com/yifanzheng/springboot-action/tree/master/springboot-banner" target="_blank" rel="noopener">springboot-banner</a></p>
-
+          <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Spring Security 是 Spring 全家桶中一个功能强大且高度可定制的身份验证和访问控制框架。与所有 Spring 项目一样，我们可以轻松扩展 Spring Security 以满足自定义要求。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/12/09/spring-security-jwt/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
     </div>
 
     
     
     
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>Star.Y.Zheng
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="/http:/yifanstar.top/2019/12/09/springboot-banner/" title="Spring Boot 定制 Banner">http://yifanstar.top/2019/12/09/springboot-banner/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deep.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-
       <footer class="post-footer">
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2019/12/09/springboot-helloworld/" rel="prev" title="Spring Boot 快速上手">
-      <i class="fa fa-chevron-left"></i> Spring Boot 快速上手
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/09/springboot-devtools/" rel="next" title="Spring Boot 使用 devtools 实现热部署">
-      Spring Boot 使用 devtools 实现热部署 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
+        <div class="post-eof"></div>
       </footer>
-    
   </article>
   
   
@@ -359,10 +324,15 @@
 
   </div>
 
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+
 
           </div>
           
-    <div class="comments" id="comments"></div>
 
         </div>
           
@@ -387,7 +357,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义-Banner"><span class="nav-number">1.</span> <span class="nav-text">自定义 Banner</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Banner-图形生成地址"><span class="nav-number">2.</span> <span class="nav-text">Banner 图形生成地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#源码地址"><span class="nav-number">3.</span> <span class="nav-text">源码地址</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
