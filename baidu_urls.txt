@@ -1,3 +1,5 @@
+http://yifanstar.top/2020/02/08/elasticsearch-setup/
+http://yifanstar.top/2020/02/08/springboot-elasticsearch/
 http://yifanstar.top/2020/01/05/springboot-ehcache/
 http://yifanstar.top/2019/12/30/springboot-guava-cache/
 http://yifanstar.top/2019/12/30/springboot-cache/
