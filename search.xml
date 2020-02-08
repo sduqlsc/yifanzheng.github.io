@@ -44,8 +44,8 @@
 <p><img alt="集群发现" data-src="discovery-info.png"></p>
 <p>意思是，集群发现(Discovery)有关的配置主要使用 <code>discovery.seed_hosts</code> 和 <code>cluster.initial_master_nodes</code> 完成。</p>
 <p>像 <code>discovery.zen.ping.unicast.hosts</code> 可能是 ElaticSearch 低版本中使用。</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>ElaticSearch 官方文档：<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html</a></p>
-<p>ElaticSearch 集群搭建及参数详解: <a href="https://www.jianshu.com/p/149a8da90bbc" target="_blank" rel="noopener">https://www.jianshu.com/p/149a8da90bbc</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html" target="_blank" rel="noopener">ElaticSearch 官方文档</a></p>
+<p><a href="https://www.jianshu.com/p/149a8da90bbc" target="_blank" rel="noopener">ElaticSearch 集群搭建及参数详解</a></p>
 ]]></content>
       <categories>
         <category>系统安装</category>
@@ -115,9 +115,9 @@
 <li><p>根据 name 获取数据：<br><img alt="es-get-name" data-src="get-name.png"></p>
 </li>
 </ul>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>ElasticSearch Java Rest Client：<a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html</a></p>
-<p>ElasticSearch Reference：<a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html</a></p>
-<p>Spring Boot 实战之 NoSQL 整合(ElasticSearch 7.3 版本)：<a href="https://cloud.tencent.com/developer/article/1522132" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1522132</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.5/java-rest-high.html" target="_blank" rel="noopener">ElasticSearch Java Rest Client</a></p>
+<p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html" target="_blank" rel="noopener">ElasticSearch Reference</a></p>
+<p><a href="https://cloud.tencent.com/developer/article/1522132" target="_blank" rel="noopener">Spring Boot 实战之 NoSQL 整合(ElasticSearch 7.3 版本)</a></p>
 <h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>由于自身能力有限，若有错误或者不当之处，还请大家批评指正，一起学习交流！</p>
 <p>GitHub 源码地址：<a href="https://github.com/yifanzheng/springboot-action/tree/master/springboot-elasticsearch" target="_blank" rel="noopener">springboot-elasticsearch</a></p>
 ]]></content>
