@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yifanstar.top/2020/02/08/elasticsearch-setup/</loc>
+    <loc>http://yifanstar.top/2020/02/08/springboot-elasticsearch/</loc>
     <lastmod>2020-02-08</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2020/02/08/springboot-elasticsearch/</loc>
+    <loc>http://yifanstar.top/2020/02/08/elasticsearch-setup/</loc>
     <lastmod>2020-02-08</lastmod>
   </url>  <url>
     <loc>http://yifanstar.top/2020/01/05/springboot-ehcache/</loc>
@@ -73,10 +73,10 @@
     <loc>http://yifanstar.top/2019/12/09/springboot-properties/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
     <loc>http://yifanstar.top/2019/12/09/springboot-banner/</loc>
