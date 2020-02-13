@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yifanstar.top/2020/02/13/http-document/</loc>
+    <lastmod>2020-02-13</lastmod>
+  </url>  <url>
     <loc>http://yifanstar.top/2020/02/08/springboot-elasticsearch/</loc>
     <lastmod>2020-02-08</lastmod>
   </url>  <url>
@@ -13,10 +16,10 @@
     <loc>http://yifanstar.top/2019/12/30/springboot-guava-cache/</loc>
     <lastmod>2020-01-05</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/builder-pattern/</loc>
+    <loc>http://yifanstar.top/2019/12/09/factory-pattern/</loc>
     <lastmod>2020-01-05</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/factory-pattern/</loc>
+    <loc>http://yifanstar.top/2019/12/09/builder-pattern/</loc>
     <lastmod>2020-01-05</lastmod>
   </url>  <url>
     <loc>http://yifanstar.top/2019/12/09/springboot-multidatasource-jdbctemplate/</loc>
@@ -73,10 +76,10 @@
     <loc>http://yifanstar.top/2019/12/09/springboot-properties/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
-    <loc>http://yifanstar.top/2019/12/09/springboot-devtools/</loc>
+    <loc>http://yifanstar.top/2019/12/09/springboot-helloworld/</loc>
     <lastmod>2019-12-09</lastmod>
   </url>  <url>
     <loc>http://yifanstar.top/2019/12/09/springboot-banner/</loc>
