@@ -1,4 +1,5 @@
 http://yifanstar.top/2020/03/09/angular-directive/
+http://yifanstar.top/2020/03/09/angular-controlvalueaccessor/
 http://yifanstar.top/2020/02/13/http-document/
 http://yifanstar.top/2020/02/08/elasticsearch-setup/
 http://yifanstar.top/2020/02/08/springboot-elasticsearch/
