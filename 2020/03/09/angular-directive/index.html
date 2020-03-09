@@ -50,24 +50,17 @@
   };
 </script>
 
-  <meta name="description" content="本文主要讲述 Windows 环境下的 ElasticSearch 的单例安装和分布式安装。">
+  <meta name="description" content="在 Angular 中有三种类型的指令：  组件，有模板的指令，组件是继承于指令的，只是扩展类与 UI 相关的属性。  属性型指令，改变 DOM 元素、组件或其他指令的行为和外观的指令。如，NgStyle、NgClass。  结构型指令，通过添加或移除 DOM 元素改变 DOM 布局的指令。如，NgIf、NgFor。   然而，在实际的开发中，根据业务的需要，我们经常会拓展 Angular 组件的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Widows 环境下安装 ElasticSearch 并配置 ElasticSearch Head">
-<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;index.html">
+<meta property="og:title" content="Angular：使用[@Directive]自定义指令">
+<meta property="og:url" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;03&#x2F;09&#x2F;angular-directive&#x2F;index.html">
 <meta property="og:site_name" content="Star&#39;s Tech Blog">
-<meta property="og:description" content="本文主要讲述 Windows 环境下的 ElasticSearch 的单例安装和分布式安装。">
+<meta property="og:description" content="在 Angular 中有三种类型的指令：  组件，有模板的指令，组件是继承于指令的，只是扩展类与 UI 相关的属性。  属性型指令，改变 DOM 元素、组件或其他指令的行为和外观的指令。如，NgStyle、NgClass。  结构型指令，通过添加或移除 DOM 元素改变 DOM 布局的指令。如，NgIf、NgFor。   然而，在实际的开发中，根据业务的需要，我们经常会拓展 Angular 组件的">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;es-download.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;es-setup-info.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;head-chrome-extension.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;es-single.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;es-discovery.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;discovery-info.png">
-<meta property="og:updated_time" content="2020-02-08T15:22:10.000Z">
+<meta property="og:updated_time" content="2020-03-09T09:27:58.194Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yifanstar.top&#x2F;2020&#x2F;02&#x2F;08&#x2F;elasticsearch-setup&#x2F;es-download.png">
 
-<link rel="canonical" href="http://yifanstar.top/2020/02/08/elasticsearch-setup/">
+<link rel="canonical" href="http://yifanstar.top/2020/03/09/angular-directive/">
 
 
 <script id="page-configurations">
@@ -81,7 +74,7 @@
   };
 </script>
 
-  <title>Widows 环境下安装 ElasticSearch 并配置 ElasticSearch Head | Star's Tech Blog</title>
+  <title>Angular：使用[@Directive]自定义指令 | Star's Tech Blog</title>
   
 
 
@@ -224,7 +217,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yifanstar.top/2020/02/08/elasticsearch-setup/">
+    <link itemprop="mainEntityOfPage" href="http://yifanstar.top/2020/03/09/angular-directive/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -237,7 +230,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Widows 环境下安装 ElasticSearch 并配置 ElasticSearch Head
+          Angular：使用[@Directive]自定义指令
         </h1>
 
         <div class="post-meta">
@@ -248,7 +241,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-08 22:05:06 / 修改时间：23:22:10" itemprop="dateCreated datePublished" datetime="2020-02-08T22:05:06+08:00">2020-02-08</time>
+              <time title="创建时间：2020-03-09 17:26:27 / 修改时间：17:27:58" itemprop="dateCreated datePublished" datetime="2020-03-09T17:26:27+08:00">2020-03-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,14 +249,14 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" itemprop="url" rel="index">
-                    <span itemprop="name">系统安装</span>
+                  <a href="/categories/Angular/" itemprop="url" rel="index">
+                    <span itemprop="name">Angular</span>
                   </a>
                 </span>
             </span>
 
           
-            <span id="/2020/02/08/elasticsearch-setup/" class="post-meta-item leancloud_visitors" data-flag-title="Widows 环境下安装 ElasticSearch 并配置 ElasticSearch Head" title="阅读次数">
+            <span id="/2020/03/09/angular-directive/" class="post-meta-item leancloud_visitors" data-flag-title="Angular：使用[@Directive]自定义指令" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -278,8 +271,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/02/08/elasticsearch-setup/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/02/08/elasticsearch-setup/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/03/09/angular-directive/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/03/09/angular-directive/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -289,14 +282,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.1k</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -308,49 +301,50 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本文主要讲述 Windows 环境下的 ElasticSearch 的单例安装和分布式安装。</p>
+        <p>在 Angular 中有三种类型的指令：</p>
+<ul>
+<li><p>组件，有模板的指令，组件是继承于指令的，只是扩展类与 UI 相关的属性。</p>
+</li>
+<li><p>属性型指令，改变 DOM 元素、组件或其他指令的行为和外观的指令。如，NgStyle、NgClass。</p>
+</li>
+<li><p>结构型指令，通过添加或移除 DOM 元素改变 DOM 布局的指令。如，NgIf、NgFor。</p>
+</li>
+</ul>
+<p>然而，在实际的开发中，根据业务的需要，我们经常会拓展 Angular 组件的指令来方便业务的开发。下面让我们来看看如何创建自己的指令。</p>
 <a id="more"></a>
 
-<h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul>
-<li>JDK 1.8 以上</li>
-<li>ElasticSearch 7.0 以上  </li>
+<h3 id="创建属性型指令"><a href="#创建属性型指令" class="headerlink" title="创建属性型指令"></a>创建属性型指令</h3><p>在 Angular 中，属性型指令的创建至少需要一个带有 <code>@Directive</code> 装饰器的控制器类。这个装饰器指定了一个选择器名称，用于标识与指令相关联的属性名称。控制器类实现了指令的功能行为。</p>
+<p>接下来，我们创建一个简单的指令，实现鼠标在元素上悬停时，改变起背景颜色；鼠标移开时，背景颜色消失；鼠标点击时，字体变大；鼠标松开时，字体恢复原样的功能。</p>
+<p><strong>指令实现</strong></p>
+<p>创建 background-exed.directive.ts 文件，实现如下代码：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Directive, HostListener, ElementRef, Renderer2, HostBinding &#125; <span class="keyword">from</span> <span class="string">'@angular/core'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="meta">@Directive</span>(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  selector: <span class="string">'[appBackgroundExe]'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> BackgroundExeDirective &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@Input</span>(<span class="string">'appBackgroundExe'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">  highLightColor: <span class="built_in">string</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">constructor</span>(<span class="params"><span class="keyword">private</span> elementRef: ElementRef, <span class="keyword">private</span> renderer: Renderer2</span>) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 这种写法比较丑陋</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// this.elementRef.nativeElement.style.background = 'yellow';</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// 推荐这种写法， Renderer</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.renderer.setStyle(<span class="keyword">this</span>.elementRef.nativeElement, <span class="string">'background'</span>, <span class="string">'yellow'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@HostBinding</span>(<span class="string">'class.pressed'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">  isPressed: <span class="built_in">boolean</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@HostListener</span>(<span class="string">'mouseenter'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">22</span></pre></td><td class="code"><pre><span class="line">  onMouseEnter(): <span class="built_in">void</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">23</span></pre></td><td class="code"><pre><span class="line">   <span class="keyword">this</span>.highLight(<span class="keyword">this</span>.highLightColor);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">24</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">25</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">26</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@HostListener</span>(<span class="string">'mouseleave'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">27</span></pre></td><td class="code"><pre><span class="line">  onMouseLeave(): <span class="built_in">void</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">28</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.highLight(<span class="literal">null</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">29</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">30</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">31</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@HostListener</span>(<span class="string">'mousedown'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">32</span></pre></td><td class="code"><pre><span class="line">  onMouseDown(): <span class="built_in">void</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">33</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.isPressed = <span class="literal">true</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">34</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">35</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">36</span></pre></td><td class="code"><pre><span class="line">  <span class="meta">@HostListener</span>(<span class="string">'mouseup'</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">37</span></pre></td><td class="code"><pre><span class="line">  onMouseUp(): <span class="built_in">void</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">38</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.isPressed = <span class="literal">false</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">39</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">40</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">41</span></pre></td><td class="code"><pre><span class="line">  <span class="keyword">private</span> highLight(color: <span class="built_in">string</span>): <span class="built_in">void</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">42</span></pre></td><td class="code"><pre><span class="line">    <span class="comment">// this.elementRef.nativeElement.style.background = color;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">43</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">this</span>.renderer.setStyle(<span class="keyword">this</span>.elementRef.nativeElement, <span class="string">'background'</span>, color);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">44</span></pre></td><td class="code"><pre><span class="line">  &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">45</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">46</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+<p>其中，<code>selector: &#39;[appBackgroundExe]&#39;</code> 是指令关联的属性名称，以便 Angular 在编译时，能从模板中找到与此指令关联的 HTML 代码。  </p>
+<p>构造函数中，注入了 <code>ElementRef</code> 和 <code>Renderer2</code> 模块的实例。通过 <code>ElementRef</code> 我们可以引用指令标识的 DOM 元素，并对其进行相关的操作；并且可以利用 <code>Renderer2</code> 提供的 API 对元素进行相关的渲染操作。  </p>
+<p><code>@HostListener</code> 和 <code>@HostBinding</code> 是属性装饰器。<code>@HostListener</code> 是用来为宿主元素添加事件监听；而指令标记的元素，就是宿主元素。<code>@HostBinding</code> 是用来动态设置宿主元素的属性值。</p>
+<p><strong>设置字体样式</strong></p>
+<ul>
+<li>appliation.component.less</li>
 </ul>
-<p>ElasticSearch 安装包下载地址：<a href="https://www.elastic.co/cn/downloads/elasticsearch" target="_blank" rel="noopener">https://www.elastic.co/cn/downloads/elasticsearch</a></p>
-<p><img alt="ES 下载地址" data-src="es-download.png"></p>
-<h3 id="ElasticSearch-单机安装"><a href="#ElasticSearch-单机安装" class="headerlink" title="ElasticSearch 单机安装"></a>ElasticSearch 单机安装</h3><p>ElasticSearch 安装包下载完成后，进行解压，然后在进入文件夹，找到 <code>bin</code> 目录下 <code>elasticsearch.bat</code> 文件，双击启动。  </p>
-<p>启动完成后，在浏览器中访问 <code>http://localhost:9200/</code> 地址，出现下面的内容，则表示成功。</p>
-<p><img alt="ES 成功安装信息" data-src="es-setup-info.png"></p>
-<h3 id="配置-ElasticSearch-Head"><a href="#配置-ElasticSearch-Head" class="headerlink" title="配置 ElasticSearch Head"></a>配置 ElasticSearch Head</h3><p>ElasticSearch Head 是 ElasticSearch 的一个可视化界面工具。</p>
-<p>下载与配置详情见 Gituhb 地址：<a href="https://github.com/mobz/elasticsearch-head" target="_blank" rel="noopener">https://github.com/mobz/elasticsearch-head</a></p>
-<p>这里我推荐 <code>Running as a Chrome extension</code>，配置比较方便且不用下载压缩包。 </p>
-<p><img alt="head 插件" data-src="head-chrome-extension.png"></p>
-<p>注意，因为 ElasticSearch Head 和 ElasticSearch 是两个独立的工具，它们之间的访问是有跨域问题的，所以不管使用哪种方式配置 ElasticSearch Head，都要在 ElasticSearch 配置文件 <code>elasticsearch.yml</code> 末尾添加如下代码，以解决跨域问题：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.enabled:</span> <span class="literal">true</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.allow-origin:</span> <span class="string">"*"</span></span></pre></td></tr></table></figure>
-<p>可以放开 <code>cluster.name</code>，<code>node.name</code>，<code>http.port</code> 的注释，自定义 ElasticSearch 信息，保存后重启 ElasticSearch。</p>
-<p>最后，打开 ElasticSearch Head，连接 ElasticSearch，如图：</p>
-<p><img alt="ElasticSearch 单例安装" data-src="es-single.png"></p>
-<h3 id="ElasticSearch-分布式安装"><a href="#ElasticSearch-分布式安装" class="headerlink" title="ElasticSearch 分布式安装"></a>ElasticSearch 分布式安装</h3><p>首先，将 ElasticSearch 解压后的文件复制两份，并且确保两份文件是完全干净的，没有做过任何更改。不然，搭建完成后，会出现莫名的异常。</p>
-<p><strong>主节点配置</strong></p>
-<p>选择一个 ElasticSearch 文件作为主节点（Master），打开配置文件 <code>elasticsearch.yml</code>，做如下更改。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 集群名字</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="attr">cluster.name:</span> <span class="string">es</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 节点名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="attr">node.name:</span> <span class="string">master</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="attr">node.master:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 网络绑定</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="attr">network.host:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置对外服务的http端口，默认为9200</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.port:</span> <span class="number">9200</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 手动指定可以成为 mater 的所有节点的 name 或者 ip</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="attr">cluster.initial_master_nodes:</span> <span class="string">["127.0.0.1"]</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 跨域</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.enabled:</span> <span class="literal">true</span> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.allow-origin:</span> <span class="string">"*"</span></span></pre></td></tr></table></figure>
-<p>保存配置文件，并启动主节点。</p>
-<p><strong>从节点配置</strong></p>
-<p>将剩下的两个文件作为 ElasticSearch 集群的从节点（Slave），我这里分别命名为 node-1 和 node-2。</p>
-<p>从节点的配置基本相同，只是节点名称和端口需要修改。这里以 <code>node-1</code> 的配置为例，打开配置文件 <code>elasticsearch.yml</code>，做如下更改。</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 集群名称，处于同一个集群所有节点，该名称必须相同</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="attr">cluster.name:</span> <span class="string">es</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 节点名称</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="attr">node.name:</span> <span class="string">node-1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 是否可以成为master节点</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="attr">node.master:</span> <span class="literal">false</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 是否允许该节点存储数据,默认开启</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="attr">node.data:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 网络绑定,这里我绑定 0.0.0.0,支持外网访问</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"><span class="attr">network.host:</span> <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.port:</span> <span class="number">8200</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 支持跨域访问</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.enabled:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line"><span class="attr">http.cors.allow-origin:</span> <span class="string">"*"</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line"> </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line"><span class="comment"># 集群发现，指定 master 节点的 ip 地址</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line"><span class="attr">discovery.seed_hosts:</span> <span class="string">["127.0.0.1"]</span></span></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.pressed</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="attribute">font-size</span>: <span class="number">30px</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<p>配置完成后，启动各节点，使用 ElasticSearch Head 工具查看集群信息，出现如图内容，说明集群搭建成功。</p>
-<p><img alt="ElasticSearch 集群" data-src="es-discovery.png"></p>
-<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>之前查阅 ElasticSearch 集群搭建的相关文章的时候，有些文章提到了这个配置：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="attr">discovery.zen.ping.unicast.hosts:</span> <span class="string">["127.0.0.1"]</span></span></pre></td></tr></table></figure>
+<p><strong>在模板中使用指令</strong></p>
+<ul>
+<li>application.component.html</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel panel-primary"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> [<span class="attr">appBackgroundExe</span>]=<span class="string">"'red'"</span>&gt;</span>鼠标移进，元素变成红色。鼠标移出，元素红色消失<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr></table></figure>
 
-<p>但是这里没有使用，后面我通过查阅 ES 7.0.0 的官方文档： <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/discovery-settings.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/elasticsearch/reference/current/discovery-settings.html</a>   </p>
-<p>文档内容如下：</p>
-<p><img alt="集群发现" data-src="discovery-info.png"></p>
-<p>意思是，集群发现(Discovery)有关的配置主要使用 <code>discovery.seed_hosts</code> 和 <code>cluster.initial_master_nodes</code> 完成。</p>
-<p>像 <code>discovery.zen.ping.unicast.hosts</code> 可能是 ElaticSearch 低版本中使用。</p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html" target="_blank" rel="noopener">ElaticSearch 官方文档</a></p>
-<p><a href="https://www.jianshu.com/p/149a8da90bbc" target="_blank" rel="noopener">ElaticSearch 集群搭建及参数详解</a></p>
+<h3 id="创建结构型指令"><a href="#创建结构型指令" class="headerlink" title="创建结构型指令"></a>创建结构型指令</h3><p>结构型指令的创建与属性型指令创建大同小异。</p>
+<p><strong>指令实现</strong></p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Directive, Input, TemplateRef, ViewContainerRef &#125; <span class="keyword">from</span> <span class="string">'@angular/core'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="meta">@Directive</span>(&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    selector: <span class="string">'[appIf]'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> IfDirective &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">constructor</span>(<span class="params"></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="params">        <span class="keyword">private</span> templateRef: TemplateRef&lt;<span class="built_in">any</span>&gt;,</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="params">        <span class="keyword">private</span> viewContainerRef: ViewContainerRef</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line"><span class="params">    </span>) &#123; &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line">    <span class="meta">@Input</span>(<span class="string">'ifCreat'</span>) </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">set</span> condition(condition: <span class="built_in">boolean</span>) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">       <span class="keyword">if</span> (condition) &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">         <span class="keyword">this</span>.viewContainerRef.createEmbeddedView(<span class="keyword">this</span>.templateRef);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">17</span></pre></td><td class="code"><pre><span class="line">       &#125; <span class="keyword">else</span> &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">18</span></pre></td><td class="code"><pre><span class="line">         <span class="keyword">this</span>.viewContainerRef.clear();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">19</span></pre></td><td class="code"><pre><span class="line">       &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">20</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">21</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<p>其中，<code>TemplateRef</code> 表示内嵌的 template 模板元素，通过它可以创建内嵌视图。<code>ViewContainerRef</code> 表示一个视图容器，可以添加一个或多个视图，通过它可以创建和管理基于 <code>TemplateRef</code> 实例的内嵌视图或组件视图。</p>
+<p><strong>在模板中使用指令</strong></p>
+<ul>
+<li>application.component.html</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"panel panel-primary"</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">div</span> *<span class="attr">ifCreate</span>=<span class="string">"'true'"</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>本文主要介绍了在 Angular 中如何自定义创建指令。在实际的开发中，我们可以很灵活地创建我们想要的指令。</p>
 
     </div>
 
@@ -366,7 +360,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/http:/yifanstar.top/2020/02/08/elasticsearch-setup/" title="Widows 环境下安装 ElasticSearch 并配置 ElasticSearch Head">http://yifanstar.top/2020/02/08/elasticsearch-setup/</a>
+    <a href="/http:/yifanstar.top/2020/03/09/angular-directive/" title="Angular：使用[@Directive]自定义指令">http://yifanstar.top/2020/03/09/angular-directive/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deep.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -383,13 +377,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/08/springboot-elasticsearch/" rel="prev" title="Spring Boot 集成 ElasticSearch （7.x 版本）搜索引擎">
-      <i class="fa fa-chevron-left"></i> Spring Boot 集成 ElasticSearch （7.x 版本）搜索引擎
+    <a href="/2020/02/13/http-document/" rel="prev" title="HTTP 协议入门">
+      <i class="fa fa-chevron-left"></i> HTTP 协议入门
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/02/13/http-document/" rel="next" title="HTTP 协议入门">
-      HTTP 协议入门 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -428,7 +419,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境准备"><span class="nav-number">1.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ElasticSearch-单机安装"><span class="nav-number">2.</span> <span class="nav-text">ElasticSearch 单机安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-ElasticSearch-Head"><span class="nav-number">3.</span> <span class="nav-text">配置 ElasticSearch Head</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ElasticSearch-分布式安装"><span class="nav-number">4.</span> <span class="nav-text">ElasticSearch 分布式安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后"><span class="nav-number">5.</span> <span class="nav-text">最后</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建属性型指令"><span class="nav-number">1.</span> <span class="nav-text">创建属性型指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建结构型指令"><span class="nav-number">2.</span> <span class="nav-text">创建结构型指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">3.</span> <span class="nav-text">小结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
